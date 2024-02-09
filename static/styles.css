@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    animation: gradientAnimation 15s infinite linear; /* Adjust the animation duration as needed */
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

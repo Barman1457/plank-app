@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plank Time Selection</title>
+</head>
+<body>
+    <h1>Grade {{ grade }} - Plank Time Selection</h1>
+    <p>Please choose the plank time:</p>
+    <ul>
+        {% for plank_time in plank_times %}
+            <li><a href="{{ url_for('student_input', grade=grade, plank_time=plank_time) }}">Plank Time {{ plank_time }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
